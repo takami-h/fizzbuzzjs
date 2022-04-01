@@ -21,4 +21,4 @@ function fizzbuzz(number) {
   }
 }
 
-module.exports = fizzbuzz;
+export {fizzbuzz};

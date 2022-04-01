@@ -1,4 +1,4 @@
-const fizzbuzz = require('./FizzBuzz');
+import {fizzbuzz} from './FizzBuzz'
 
 describe('fizzbuzz', () => {
   it('should return "1" on 1', () => {
