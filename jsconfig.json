@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "checkJs": true,
-    "maxNodeModuleJsDepth": 1
+    "module": "es2015"
   },
-  "input": ["src"]
+  "exclude": ["node_modules"]
 }
