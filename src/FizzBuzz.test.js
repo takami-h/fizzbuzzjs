@@ -1,5 +1,18 @@
 import {fizzbuzz} from './FizzBuzz'
 
+
+/**
+ * sum up numbers.
+ * @type{function(...number): number}
+ */
+const sum = (...nums) => nums.reduce((prev, current) => prev + current, 0);
+describe('sum', () => {
+  it('should sum up all numbers', () => {
+    expect(sum(1, 2, 3, 4)).toBe(10);
+    expect(sum()).toBe(0);
+  });
+})
+
 describe('fizzbuzz', () => {
   it('should return "1" on 1', () => {
     expect(fizzbuzz(1)).toBe('1');
