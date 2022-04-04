@@ -25,4 +25,8 @@ describe('fizzbuzz', () => {
     expect(() => fizzbuzz('1')).toThrow();
     expect(() => fizzbuzz(0.1)).toThrow();
   });
+  it('should throw an error on passing less than or equal to zero', () => {
+    expect(() => fizzbuzz(0)).toThrow();
+    expect(() => fizzbuzz(-1)).toThrow();
+  });
 });

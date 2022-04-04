@@ -9,6 +9,7 @@ const divisibleBy5 = (i) => divisibleByN(i, 5);
  */
 function fizzbuzz(number) {
   if (!Number.isInteger(number)) throw `${number} is not an integer.`;
+  if (number <= 0) throw `${number} is not a positive integer`;
 
   if (divisibleBy3(number) && divisibleBy5(number)) {
     return 'Fizz Buzz';
